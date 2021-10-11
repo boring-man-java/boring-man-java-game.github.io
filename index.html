@@ -4,38 +4,52 @@
 		<meta charset="UTF-8"> 
 		<title>模糊查询</title> 
 		<style>
-		*{
-			list-style: none;
+			*{
+			list-style: none;color:#337ab7;
 			padding:0;
 			margin:0;
+         
+         text-align: center;
+        
 		}
-   input{
-   background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 搜索按钮 */
-	background-position: 10px 10px; /* 定位搜索按钮 */
-	background-repeat: no-repeat; /* 不重复图片 */
-	width: 40%;
-	font-size: 20px;
-	padding: 12px 20px 12px 40px;
-	border: 1px solid #ddd;
-   
-}
-
-		div{
+   	div{
 			text-align: center;
-			padding-top:20px;
+			padding-top:50px;
+         
+  
 		}
 		ul{
 			padding-top:20px;
-			width:30%;
-			margin:0 50% 0 35%;
+			width:60%;
+			margin:0 30% 0 20%;
+         
 		}
-		li{
-		  border-bottom: 1px solid #ddd;
-			
-			padding:3px;
-			font-size: 20px;
-		}
-   a{color:#4183c4;text-decoration:none}
+		
+	
+ Input {
+    background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 搜索按钮 */
+    background-position: 10px 12px; /* 定位搜索按钮 */
+    background-repeat: no-repeat; /* 不重复图片*/
+    width: 60%; 
+    font-size: 20px; /* 加大字体 */
+    padding: 12px 20px 12px 20px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
+}
+
+
+ li a {
+    
+     border-bottom: 1px solid #ddd; /* 链接添加边框 */
+    margin-top: 1px; 
+    background-color: #fff; 
+    padding: 8px; 
+    text-decoration: none;
+    font-size: 18px; 
+    color: #337ab7; 
+    display: block; 
+}
+		
 	</style> 
 	</head> 
 	<body> 
@@ -147,7 +161,7 @@ function searchByRegExp(keyWord, list) {
 var showClickTextFunction = function (a) {
 
     //alert(this.innerText + "---" + this.getAttribute("code"));  
-    oTxt.value = a;
+   // oTxt.value = a;
     // $('#ruleOrgCode').val(this.getAttribute("code"));
     oList.style.display = "none";
     console.log(oTxt.value);
