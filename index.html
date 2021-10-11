@@ -2,69 +2,50 @@
 <html lang="en"> 
 	<head> 
 		<meta charset="UTF-8"> 
-		<title>boring-manの爪哇岛</title> 
+		<title>模糊查询</title> 
 		<style>
 		*{
-			list-style: none;color:#337ab7;
+			list-style: none;
 			padding:0;
 			margin:0;
-         
-         text-align: center;
-        
 		}
-   	div{
+   input{
+   background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 搜索按钮 */
+	background-position: 10px 10px; /* 定位搜索按钮 */
+	background-repeat: no-repeat; /* 不重复图片 */
+	width: 40%;
+	font-size: 20px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+   
+}
+
+		div{
 			text-align: center;
-			padding-top:50px;
-         
-  
+			padding-top:20px;
 		}
 		ul{
 			padding-top:20px;
-			width:60%;
-			margin:0 30% 0 20%;
-         
+			width:30%;
+			margin:0 50% 0 35%;
 		}
-		
-	
- Input {
-    background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 搜索按钮 */
-    background-position: 10px 12px; /* 定位搜索按钮 */
-    background-repeat: no-repeat; /* 不重复图片*/
-    width: 60%; 
-    font-size: 20px; /* 加大字体 */
-    padding: 12px 20px 12px 20px; 
-    border: 1px solid #ddd; 
-    margin-bottom: 12px; 
-}
-
-
- li a {
-    
-     border-bottom: 1px solid #ddd; /* 链接添加边框 */
-    margin-top: 1px; 
-    background-color: #fff; 
-    padding: 8px; 
-    text-decoration: none;
-    font-size: 18px; 
-    color: #337ab7; 
-    display: block; 
-}
-
-
-
-
-  
+		li{
+		  border-bottom: 1px solid #ddd;
+			
+			padding:3px;
+			font-size: 20px;
+		}
+   a{color:#4183c4;text-decoration:none}
 	</style> 
 	</head> 
-	<body>
-		<div>
-			<input type="text" id="txt" placeholder="输入名字就显示">
+	<body> 
+		<div align="center"> 
+			<input type="text" id="txt" onkeyup="myFunction()" placeholder=" 输入就显示"> 
 			<ul id="list"> 
-        
 			</ul> 
 		</div> 
 		<script>
-var oTxt = document.getElementById('txt');
+			var oTxt = document.getElementById('txt');
 			var oBtn = document.getElementById('btn');
 			var oList = document.getElementById('list');
 			// var newJson = ["桃子", "苹果", "梨子", "香蕉", "香瓜", "葡萄", "柠檬", "橘子", "草莓"];
@@ -176,6 +157,6 @@ var oTxt = document.getElementById('txt');
 				oList.style.display = "none";
 				console.log(oTxt.value);
 			};
-</script>
+		</script>  
 	</body>
 </html>
